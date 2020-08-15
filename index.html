@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parcial AS</title>
+    <!-- JavaScript -->
+    <script type="text/javascript" src="script.js"></script>
+    <!-- CSS -->
+    <link href="styles.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">
+              <img src="img/fin.png" width="30" height="30" class="d-inline-block align-top" alt="">
+              FinanCréd
+            </a>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Créditos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Financiamentos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Cartões</a>
+                </li>
+        </nav>
+    </header>
+
+    <div class="jumbotron jumbotron-fluid" id="cabecalho">
+        <div class="container">
+          <h1>FinanCréd</h1>      
+          <p>FinanCréd possui o melhor apoio para a realização dos seus sonhos. 
+              Precisa de empréstimo? Comprar um carro novo? Temos o financiamento ideal para você.</p>
+        </div>
+    </div>
+
+    <section class="container" style="margin-top:30px">
+        <div class="row">
+          <div class="col-md-4">
+            <aside>
+            <form id="calculadora">
+            <h2>Calculadora de Juros</h2>
+            <fieldset>
+                <legend>Calcule o Juros Do Seu Boleto</legend>
+                <label>Data de Vencimento:</label>
+                <input id="dataVencimento" type="date"/><br/>
+                <label>Data de Pagamento: </label>
+                <input id="dataPagamento" type="date"/><br/>
+                <label>Valor do Titulo: </label>
+                <input id="valorTitulo" type="text"/><br/>
+                <label>Outras Despesas: </label>
+                <input id="adicionais" type="text"/><br/><br/>
+                <label>Dias em Atraso: </label>
+                <input id="diasAtraso" type="text" disabled/><br/>
+                <label>Multa: </label>
+                <input id="multa" type="text" disabled/><br/>
+                <label>Mora: </label>
+                <input id="mora" type="text" disabled/><br/>
+                <label>Juros Totais: </label>
+                <input id="juros" type="text" disabled/><br/>
+                <label>Valor Total a Pagar: </label>
+                <input id="valorTotal" type="text" disabled/><br/>
+            </fieldset>
+            </form>
+          </aside>
+            <br>
+            <button type="submit" class="btn btn-primary" id="button" onclick="calcular()">Calcular</button>
+            <br><br>
+            <hr class="d-sm-none">
+          </div>
+          <article class="col-md-8">
+            <div class="informacoes">
+            <h2>Financiamento de Veiculos FinanCréd</h2>
+            <h5>Ofertas Pandemicas, Julho, 2020</h5>
+            <p>Se prepare!</p>
+            <p>Só quem é líder no mercado oferece as melhores condições para você. São até 8 anos para pagar, parcelas fixas e sem surpresas.</p>
+            </div>
+            <br>
+            <div class="informacoes">
+            <h2>Cartão de Crédito Financréd</h2>
+            <h5>Só quem tem sabe</h5>
+            <p>O Cartão de Crédito FinanCréd possui um programa completo e exclusivo, com beneficios em produtos, serviços e zero anuidade.</p>
+          </div>
+          </article>
+        </div>
+    </section>
+      
+    <footer class="page-footer font-small blue pt-4">
+      <div class="container-fluid text-center text-md-left">
+        <div class="row">
+          <div class="col-md-5">
+            <h5 class="text-uppercase">FinanCréd</h5>
+            <p>© Financréd S.A - Não exigimos nenhum tipo de pagamento antecipado para empréstimos. Em caso de dúvida, entre em contato com a nossa Central de Atendimento.<br><br>
+              
+              Rua Fulano de Tal, 20 - Centro,<br>
+              Arroio do Sal - RS</p>
+          </div>
+          <hr class="clearfix w-100 d-md-none pb-3">
+          <div class="col-md-3">
+            <h5 class="text-uppercase">Veja e compartilhe</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!">Facebook</a>
+              </li>
+              <li>
+                <a href="#!">Instagram</a>
+              </li>
+              <li>
+                <a href="#!">Twitter</a>
+              </li>
+            </ul>
+    
+          </div>
+          <div class="col-md-3">
+            <h5 class="text-uppercase">Atendimento</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!">Fale com a gente</a>
+              </li>
+              <li>
+                <a href="#!">Fique em dia</a>
+              </li>
+              <li>
+                <a href="#!">Dúvidas</a>
+              </li>
+              <li>
+                <a href="#!">Chat</a>
+              </li>
+            </ul>
+          </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>
